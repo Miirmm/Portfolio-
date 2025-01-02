@@ -1,0 +1,57 @@
+:root{
+    --text: #ebecec;
+    --background: #040706;
+    --primary: #9adec2;
+    --secondary: #148c5b;
+    --accent: #18ffa1;
+
+}
+body{
+    width: 100vw;
+}
+*{
+    background: var(--background);
+    color: var(--text);
+    font-family: "poppins", sans-serif;
+}
+.header-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.block-h2{
+    position: relative;
+    top: -60px;
+}
+.drop-m, .drop-a, .drop-e, .drop-l, .titre-nom{
+    display: inline-block;
+}
+.elastic-l, .elastic-e1, .elastic-f, .elastic-e2, .elastic-b, .elastic-v, .elastic-r, .elastic-e3{
+    display: inline-block;
+    background: none;
+    margin-left: 0;
+}
+.bordure-test{
+    position: relative;
+    left: -100%;
+    height: 2px;
+}
+.test-button{
+    border: var(--primary) solid 1px;
+    border-radius: 5px;
+    transform: skew(155deg);
+    height: 50%;
+    padding: 0.8rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5rem;
+    top: -100%;
+    position: relative;
+}
+.skew-fix{
+    transform: skew(-155deg);
+    position: relative;
+}
+.block-button-header{
+    display: flex;
+    flex-direction: row;
+}
