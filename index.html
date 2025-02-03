@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Maël Lefebvre</title>
-  <!--  lien style-->
-  <link href="index.css" rel="stylesheet">
-  <!--  fin lien style-->
-<!--  fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!--  -->
+    <meta charset="UTF-8">
+    <title>Maël Lefebvre</title>
+    <!--  lien style-->
+    <link href="index.css" rel="stylesheet">
+    <!--  fin lien style-->
+    <!--  fonts-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <!--  -->
 </head>
 <body class="bg-background text-text">
 <header>
-  <div class="header-banner">
-  <div class="text-text block-h2 bg-background">
-    <h2 class="text-4xl ml-5 mt-5 mb-5 "><span class="drop-m">M</span><span class="drop-a">a</span><span class="drop-e">e</span><span class="drop-l">l</span> <span class="ml-2 titre-nom"><span class="elastic-l"> L</span><span class="elastic-e1">e</span><span class="elastic-f"> f</span><span class="elastic-e2"> e</span><span class="elastic-b"> b</span><span class="elastic-v"> v</span><span class="elastic-r"> r</span><span class="elastic-e3"> e</span></span></h2>
-  </div>
-    <div class="block-button-header">
-    <a class="test-button"><div class="skew-fix"> lorem</div></a>
-    <a class="test-button"><div class="skew-fix"> lorem</div></a>
-    <a class="test-button"><div class="skew-fix"> lorem</div></a>
+    <div class="header-banner">
+        <div class="text-text block-h2 bg-background">
+            <h2 class="text-4xl ml-5 mt-5 mb-5 "><span class="drop-m">M</span><span class="drop-a">a</span><span
+                    class="drop-e">e</span><span class="drop-l">l</span> <span class="ml-2 titre-nom"><span
+                    class="elastic-l"> L</span><span class="elastic-e1">e</span><span class="elastic-f"> f</span><span
+                    class="elastic-e2"> e</span><span class="elastic-b"> b</span><span class="elastic-v"> v</span><span
+                    class="elastic-r"> r</span><span class="elastic-e3"> e</span></span></h2>
+        </div>
+        <div class="block-button-header">
+            <a class="test-button">
+                <div class="skew-fix"> lorem</div>
+            </a>
+            <a class="test-button">
+                <div class="skew-fix"> lorem</div>
+            </a>
+            <a class="test-button">
+                <div class="skew-fix"> lorem</div>
+            </a>
+        </div>
     </div>
-  </div>
-  <div class=" rounded bordure-test bg-gradient-to-r from-primary to-accent"></div>
+    <div class=" rounded bordure-test bg-gradient-to-r from-primary to-accent"></div>
 </header>
 <main>
+    <section class="w-full section-hero">
+        <div class=" mt-40 w-full  h-auto mx-auto">
+            <div class="h-[20vh] "><h1 class="text-5xl font-medium">Lorem ipsum dolor, <span
+                    class="span-name bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">Lorem ipsum.</span>
+            </h1>
+                <p class="h-[30vh] px-48  text-xl scrollbar-hidden overflow-y-scroll">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Ad aut cumque magnam perspiciatis tempora. Asperiores corporis
+                    cupiditate dicta eos, est fugit ipsam numquam officiis omnis porro quas saepe similique
+                    voluptatibus!A ab accusamus accusantium amet architecto atque blanditiis debitis dignissimos
+                    exercitationem hic id incidunt iusto magni minima, mollitia pariatur recusandae repudiandae, unde
+                    velit veritatis. Accusamus dolorem libero praesentium quidem ut?Ab consequatur, dolorem earum et
+                    exercitationem ipsam ipsum libero magni minus molestias necessitatibus nostrum quae quisquam
+                    repellat repellendus sed tenetur vitae. Atque, consequuntur eius minus nam natus nisi perspiciatis
+                    sint.A ab aliquam architecto corporis cum cumque distinctio dolores error facere iusto laborum
+                    libero maxime modi molestiae, nemo provident reprehenderit repudiandae rerum sit soluta suscipit
+                    unde voluptatum? Dolores, itaque, obcaecati?Accusamus adipisci asperiores at debitis dolore dolorem
+                    ea eaque eius eveniet, ipsa ipsum iusto laborum molestias nihil nisi odio quaerat quidem quisquam
+                    recusandae repudiandae sapiente sint sunt, totam veniam, veritatis?</p></div>
+        </div>
+    </section>
 </main>
 <footer></footer>
 <!--script -->
@@ -43,7 +74,7 @@
                     'primary': '#9adec2',
                     'secondary': '#148c5b',
                     'accent': '#18ffa1',
-                },
+                }
 
             }
         }
@@ -67,7 +98,7 @@
 <script>
     // use a script tag or an external JS file
     document.addEventListener("DOMContentLoaded", (event) => {
-        gsap.registerPlugin(Flip,ScrollTrigger,ScrollToPlugin,EaselPlugin,TextPlugin,RoughEase,CustomEase)
+        gsap.registerPlugin(Flip, ScrollTrigger, ScrollToPlugin, EaselPlugin, TextPlugin, RoughEase, CustomEase)
         // gsap code here!
     });
 
