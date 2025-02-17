@@ -9,6 +9,7 @@
 
 body {
     width: auto;
+    scroll-behavior: auto;
 }
 
 * {
@@ -61,11 +62,80 @@ body {
     flex-direction: row;
 }
 
-.scrollbar-hidden::-webkit-scrollbar {
-    display: none;
+
+
+
+.section-morph {
+
+
+    overflow: hidden;
+    background: var(--accent);
+    scroll-behavior: smooth;
 }
 
-.scrollbar-hidden {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+.section-morph span {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    z-index: 2;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+    top: calc(50vh - 56px);
+
+    &.up {
+        right: 0;
+    }
+
+    &.down {
+        left: 0;
+    }
 }
+.up{
+    color: var(--accent);
+    background-color: transparent;
+}
+.down{
+    color: var(--accent);
+    background-color: transparent;
+}
+.up p{
+    color: var(--text);
+    background-color: transparent;
+}
+.down p{
+    color: var(--text);
+    background-color: transparent;
+}
+.section-morph .box {
+    height: 1.2vh;
+    width: 50vw;
+    margin-bottom: -0.2vh;
+    background: var(--text);
+    display: block;
+}
+
+.main{
+    overflow-x:hidden;
+}
+.horizontal-sliders{
+    display:flex;
+    flex-wrap:no-wrap;
+    width: 500%;
+    overflow-x:hidden;
+}
+.slide{
+    width:100%;
+}
+.next-block{
+    height:100vh;
+    background:blue;
+}
+
+
+
+
+
+
+
